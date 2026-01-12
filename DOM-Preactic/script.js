@@ -54,3 +54,21 @@ form.addEventListener("submit", function (e) {
 
   error.innerText = "Form submitted successfully ✅";
 });
+
+
+const formm = document.getElementById("myFormm");
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // ❗ submit stop
+
+  const nameValue = document.getElementById("name").value;
+
+  if (nameValue === "") {
+    msg.innerText = "Name field empty cha ❌";
+    msg.style.color = "red";
+  } else {
+    msg.innerText = "Form OK ✅";
+    msg.style.color = "green";
+  }
+});

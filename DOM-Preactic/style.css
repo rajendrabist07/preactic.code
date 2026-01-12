@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+#animate-box {
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
